@@ -1,0 +1,89 @@
+/* ESTILOS GLOBALES
+-------------------------------------------------- */
+
+/* Relleno debajo del pie de página y cuerpo de texto más claro */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* PERSONALIZA EL CARRUSEL
+-------------------------------------------------- */
+
+/* Clase base de carrusel */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Desde el posicionamiento de la imagen, necesitamos ayudar al pie de foto */
+.carousel-caption {
+  font: oblique bold 120% georgia;
+  bottom: 3rem;
+  z-index: 10;
+  color: rgba(255, 255, 255, 0.938);
+}
+
+/* Declarar alturas debido al posicionamiento del elemento img */
+.carousel-item {
+  height: 32rem;
+}
+
+
+
+/* CONTENIDO COMERCIAL
+-------------------------------------------------- */
+
+/* Alinear al centro el texto dentro de las tres columnas debajo del carrusel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:comenzar:ignorar */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:fin:ignorar */
+
+
+/* largometrajes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Espacio el Bootstrap <hr> más */
+}
+
+/* Reducir los encabezados de marketing */
+/* rtl:comenzar:eliminar */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:fin:eliminar */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+/* aumentar el tamaño del contenido del carrusel */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: rgb(255, 249, 249);
+  }
+
+  .featurette-heading {
+    font: oblique bold 120% georgia;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.979);
+    background:linear-gradient(30deg, rgb(129, 146, 145),rgb(106, 105, 202), rgb(179, 206, 231), rgb(3, 33, 97), rgb(149, 182, 243));
+
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
